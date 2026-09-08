@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portafolio — Editor Audiovisual</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles/Styles.css">
+
+<!-- Estilos específicos para organizar el layout de esta página -->
+<style>
+  /* Esto elimina la línea punteada central que viene por defecto en el CSS original */
+  .row::before {
+    display: none !important;
+    }
+
+  /* Clases para centrar textos y títulos */
+  .center-text { text-align: center; max-width: 800px; margin: 0 auto; }
+  .section-title { text-align: center; font-size: 18px; margin-bottom: 30px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; }
+  
+  /* Botones negros */
+  .btn-black {
+    display: inline-block;
+    background: #000;
+    color: #fff;
+    padding: 10px 32px;
+    border-radius: 999px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    margin-top: 15px;
+    transition: transform 0.2s ease;
+  }
+  .btn-black:hover { transform: translateY(-2px); }
+
+  /* Ajustes para los recuadros tipo wireframe (rojos como en tu imagen) */
+  .wireframe-box {
+    border: 1px solid #ff4d4d;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #333;
+    font-size: 14px;
+  }
+
+  /* Grid para el collage de fotografía */
+  .photo-grid-top {
+    display: grid;
+    grid-template-columns: 1fr 0.4fr 1fr; /* El de en medio es más delgado */
+    gap: 16px;
+    margin-bottom: 16px;
+  }
+  .photo-grid-bottom {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1.5fr; /* El espacio de texto es más ancho */
+    gap: 16px;
+  }
+  
+  /* Separación entre bloques */
+  .block-spacing { margin-bottom: 90px; }
+
+  /* Sombra dura para todas las imágenes de fotografía */
+  .photo-grid-top img, 
+  .photo-grid-bottom img {
+    border: 2px solid #000 !important;
+    box-shadow: -10px 10px 0px 0px #000 !important;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="nav-inner">
+    <nav class="nav-left">
+      <a href="Hola.html">Hola</a>
+      <a href="Index.html" class="active">General</a>
+      <a href="Videografia.html">Videografía</a>
+      <a href="Fotografia.html">Fotografía</a>
+      <a href="Cv.html">CV</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top" style="padding-top: 40px;">
+
+  <section id="general">
+    <!-- ============ INTRODUCCIÓN ============ -->
+    <div class="center-text block-spacing reveal">
+      <h1 style="margin-bottom: 24px; font-size: 24px; text-transform: uppercase; letter-spacing: 2px;">General</h1>
+      <p style="color: var(--ink); line-height: 1.6; font-size: 15px;">Transformando ideas en historias visuales a<br>través de la edición, el ritmo y la narrativa.<br>Este es un vistazo a cómo lo llevo a la pantalla.</p>
+    </div>
+
+    <!-- ============ DEMO REEL ============ -->
+    <div class="block-spacing reveal">
+      <h3 class="section-title">Demo Reel</h3>
+      <!-- Usamos la clase row pero al poner el recuadro primero, sale a la izquierda -->
+      <div class="row" style="border: none; padding: 0;">
+        
+        <div style="width: 68%; justify-self: end; display: flex; align-items: center;">
+          <iframe 
+          src="https://drive.google.com/file/d/1Tz7VkNSav8JqfdfVnkUSEDAWLuLbEJIt/preview"
+          width="100%" 
+          height="650" 
+          style="border-radius: 8px; border: none; box-shadow: -12px 12px 0px 0px #000;" 
+          allow="autoplay; fullscreen">
+          </iframe>
+        </div>
+
+        <!-- Derecha: Textos y Botón -->
+        <div class="col-text" style="display: flex; flex-direction: column; justify-content: center; padding-left: 20px;">
+          <p style="font-size: 13px; margin-bottom: 10px;">Este demo reel reúne una selección de proyectos de distintos giros, explorando diferentes estilos y formas de abordar la imagen a través de la edición.</p>
+          <p style="font-size: 13px; margin-bottom: 10px;">Cada fragmento responde a una intención especifica, adaptándose al ritmo, la estética y el mensaje de cada proyecto.</p>
+          <p style="font-size: 13px; margin-bottom: 10px;">A lo largo del reel se puede ver un enfoque versátil, donde la narrativa visual y el detalle juegan un papel clave en la construcción de cada pieza.</p>
+          <p style="font-size: 13px; margin-bottom: 10px;">Desde propuestas más dinámicas hasta momentos más contemplativos, el objetivo es mantener coherencia y claridad en lo que se quiere comunicar.</p>
+          <p style="font-size: 13px; margin-bottom: 30px;">Este trabajo refleja una búsqueda constante por mejorar, experimentar y encontrar nuevas formas de contar a través de la imagen.</p>
+          
+          <p style="font-size: 13px; margin-bottom: 10px;">Una selección de proyectos enfocados en contenido gastronómico, donde la edición, el ritmo y la estética buscan resaltar la esencia de cada platillo.</p>
+          <p style="font-size: 13px; margin-bottom: 15px;">A través de la imagen, el color y el detalle, cada pieza está pensada para transmitir sensaciones y abrir el apetito desde lo visual.</p>
+          
+          <div style="text-align: right; padding-right: 20px;">
+            <a href="/pages/Videografia.html" class="btn-black">VIDEO</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============ SOFTWARE ============ -->
+    <div class="center-text block-spacing reveal" style="font-size: 13px;">
+      <p style="margin-bottom: 10px;">Actualmente trabajo en Premiere Pro, ya que es la herramienta utilizada dentro de la agencia en la que colaboro, lo que me ha permitido integrarme de forma eficiente a sus flujos de trabajo.</p>
+      <p>Previamente trabajé con Final Cut Pro, donde desarrollé bases en edición, narrativa y ritmo, aunque hoy mi enfoque está completamente en Premiere Pro.</p>
+    </div>
+
+    <!-- ============ FOTOGRAFÍA ============ -->
+    <div class="block-spacing reveal">
+      <h3 class="section-title">Fotografía</h3>
+      
+      <!-- Fila superior de fotos -->
+      <div class="photo-grid-top">
+        <!-- Cambia "foto1.jpg" por el nombre real de tu imagen -->
+        <img src="/src/inicio/carros2.jpg" alt="Fotografía variada 1" style="width: 100%; height: 235px; object-fit: cover; border-radius: 4px;">
+        <img src="/src/inicio/chicaDark.jpg" alt="Fotografía variada 2" style="width: 100%; height: 235px; object-fit: cover; border-radius: 4px;">
+        <img src="/src/inicio/operacion.jpg" alt="Fotografía variada 3" style="width: 100%; height: 235px; object-fit: cover; border-radius: 4px;">
+      </div>
+      
+      <!-- Fila inferior de fotos + texto -->
+      <div class="photo-grid-bottom">
+        <img src="/src/inicio/carros1.jpg" alt="Fotografía variada 4" style="width: 100%; height: 220px; object-fit: cover; border-radius: 4px;">
+        <img src="/src/inicio/beers.jpg" alt="Fotografía variada 5" style="width: 100%; height: 220px; object-fit: cover; border-radius: 4px;">
+        
+        <!-- Textos y botón a la derecha -->
+        <div style="display: flex; flex-direction: column; justify-content: flex-end; padding-left: 15px; padding-bottom: 10px;">
+          <p style="font-size: 13px; line-height: 1.6; margin-bottom: 15px;">Cada pieza nace de una intención clara, buscando no solo verse bien, sino también comunicar y conectar con la idea detrás de cada proyecto.</p>
+          <p style="font-size: 13px; line-height: 1.6; margin-bottom: 20px;">Este trabajo refleja un proceso en constante evolución, donde la experimentación y el detalle forman parte de la construcción visual.</p>
+          <div>
+            <a href="#" class="btn-black">FOTO</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============ PRODUCCIÓN AUDIOVISUAL ============ -->
+    <div class="center-text block-spacing reveal">
+      <h3 class="section-title" style="text-transform: none; font-size: 16px;">Producción Audiovisual</h3>
+      <p style="font-size: 14px; margin-bottom: 15px;">Además de la edición, también me desempeño en el área de producción audiovisual, participando directamente en la captura de contenido.</p>
+      <p style="font-size: 14px; margin-bottom: 15px;">Trabajo con distintos equipos como cámaras (A7iii, A6100, ZV10) y estabilizadores, adaptándome a las necesidades de cada proyecto para lograr tomas estables, dinámicas y visualmente cuidadas.</p>
+      <p style="font-size: 14px;">Esta experiencia me permite entender el proceso completo de producción, desde la grabación hasta la edición, asegurando coherencia visual y narrativa en cada pieza.</p>
+    </div>
+
+  </section>
+
+</main>
+
+<script src="/script/Script.js"></script>
+
+</body>
+</html>

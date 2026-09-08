@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fotografía — Portafolio Adrián Ortiz</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles/Styles.css">
+
+<style>
+  /* Título principal con línea divisoria debajo (como en tu imagen) */
+  .page-title { 
+    font-size: 24px; 
+    text-transform: uppercase; 
+    letter-spacing: 2px; 
+    text-align: center; 
+    margin-bottom: 60px; 
+    padding-bottom: 30px; 
+    border-bottom: 1px solid var(--line); 
+  }
+  
+  .section-title { 
+    font-size: 15px; 
+    font-weight: 600; 
+    margin-bottom: 30px; 
+    text-transform: uppercase; 
+    letter-spacing: 1px; 
+    text-align: center; 
+  }
+  
+  /* Layout principal superior (Mitad Comida, Mitad Médica) */
+  .top-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 80px; /* Separación amplia entre ambas categorías */
+    max-width: 1400px;
+    margin: 0 auto 100px auto;
+  }
+  .top-section > div {
+    flex: 1; 
+  }
+
+  /* --- GRIDS DE COMIDA (5 fotos) --- */
+  .grid-comida-top { display: grid; grid-template-columns: repeat(3, 1fr); gap: 25px; margin-bottom: 25px; }
+  .grid-comida-bottom { display: grid; grid-template-columns: 1fr 2.1fr; gap: 25px; }
+
+  /* --- GRIDS DE MÉDICA (4 fotos) --- */
+  /* Arriba 2 fotos, abajo 1 grande y 1 chica */
+  .grid-medica-top { display: grid; grid-template-columns: repeat(2, 1fr); gap: 25px; margin-bottom: 25px; }
+  .grid-medica-bottom { display: grid; grid-template-columns: 2.1fr 1fr; gap: 25px; }
+
+  /* --- GRID AUTOMOTRIZ (6 fotos) --- */
+  .automotriz-section { max-width: 900px; margin: 0 auto; }
+  .grid-auto { display: grid; grid-template-columns: repeat(3, 1fr); gap: 25px; margin-bottom: 25px; }
+
+  /* Estilos universales para todas las fotos (Borde y Sombra Dura) */
+  .photo-box {
+    width: 100%;
+    background-color: #e5e5e5; /* Color gris de fondo mientras pones tus fotos */
+    border: 2px solid #000;
+    border-radius: 4px;
+    box-shadow: -10px 10px 0px 0px #000;
+    object-fit: cover;
+    display: block;
+  }
+
+  /* Alturas para darle la forma exacta a los recuadros */
+  .tall-img { height: 300px; }
+  .large-img { height: 380px; }
+  
+  section { max-width: 95% !important; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="nav-inner">
+    <nav class="nav-left">
+      <a href="Hola.html">Hola</a>
+      <a href="Index.html">General</a>
+      <a href="Videografia.html">Videografía</a>
+      <a href="Fotografia.html" class="active">Fotografía</a>
+      <a href="Cv.html">CV</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top" style="padding-top: 40px; padding-bottom: 100px; padding-left: 40px; padding-right: 40px;">
+
+  <h1 class="page-title">Fotografía</h1>
+
+  <!-- SECCIÓN SUPERIOR: Comida y Médica lado a lado -->
+  <div class="top-section reveal">
+    
+    <!-- COLUMNA IZQUIERDA: Comida -->
+    <div>
+      <h3 class="section-title">Fotografía de Comida</h3>
+      <div class="grid-comida-top">
+        <img src="/src/fotografia/comida/comida1.jpg" alt="Comida 1" class="photo-box tall-img">
+        <img src="/src/fotografia/comida/comida2.jpg" alt="Comida 2" class="photo-box tall-img">
+        <img src="/src/fotografia/comida/comida3.jpg" alt="Comida 3" class="photo-box tall-img">
+      </div>
+      <div class="grid-comida-bottom">
+        <img src="/src/fotografia/comida/comida4.jpg" alt="Comida 4" class="photo-box large-img">
+        <img src="/src/fotografia/comida/comida5.jpg" alt="Comida 5" class="photo-box large-img">
+      </div>
+    </div>
+
+    <!-- COLUMNA DERECHA: Médica -->
+    <div>
+      <h3 class="section-title">Fotografía Medica</h3>
+      <div class="grid-medica-top">
+        <img src="/src/fotografia/medicina/medicina1.jpg" alt="Médica 1" class="photo-box tall-img">
+        <img src="/src/fotografia/medicina/medicina2.jpg" alt="Médica 2" class="photo-box tall-img">
+      </div>
+      <div class="grid-medica-bottom">
+        <!-- Nota: Escrito idéntico a como está en tu carpeta (medicna3.jpg) -->
+        <img src="/src/fotografia/medicina/medicina3.jpg" alt="Médica 3" class="photo-box large-img">
+        <img src="/src/fotografia/medicina/medicina4.jpg" alt="Médica 4" class="photo-box large-img">
+      </div>
+    </div>
+
+  </div> <!-- Cierra top-section -->
+
+  <!-- SECCIÓN INFERIOR: Automotriz (Centrada) -->
+  <div class="automotriz-section reveal">
+    <h3 class="section-title">Fotografia Automotriz</h3>
+    <!-- Fila 1 -->
+    <div class="grid-auto">
+      <img src="/src/fotografia/carros/carro1.jpg" alt="Auto 1" class="photo-box tall-img">
+      <img src="/src/fotografia/carros/carro2.jpg" alt="Auto 2" class="photo-box tall-img">
+      <img src="/src/fotografia/carros/carro3.jpg" alt="Auto 3" class="photo-box tall-img">
+    </div>
+    <!-- Fila 2 -->
+    <div class="grid-auto">
+      <img src="/src/fotografia/carros/carro4.jpg" alt="Auto 4" class="photo-box tall-img">
+      <img src="/src/fotografia/carros/carro5.jpg" alt="Auto 5" class="photo-box tall-img">
+      <img src="/src/fotografia/carros/carro6.jpg" alt="Auto 6" class="photo-box tall-img">
+    </div>
+  </div>
+
+</main>
+
+<script src="/script/Script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Videografía — Portafolio Adrián Ortiz</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles/Styles.css">
+
+<style>
+  /* Textos centrados de introducción */
+  .center-text { 
+    text-align: center; 
+    max-width: 1800px; 
+    margin: 0 auto 30px auto; 
+    font-size: 13px; 
+    line-height: 1.6; 
+  }
+  
+  /* Título principal de la página y secciones */
+  .page-title { font-size: 20px; text-transform: uppercase; letter-spacing: 2px; text-align: center; margin-bottom: 40px; }
+  .section-title { font-size: 15px; font-weight: 600; margin-bottom: 15px; text-transform: uppercase; letter-spacing: 1px; text-align: center; }
+  
+  /* Filas que dividen videos y texto */
+  .video-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px; /* Da un poco más de aire entre los videos y las letras */
+    max-width: 1600px !important; 
+    margin: 0 auto;
+  }
+  
+  .video-row .video-grid-3 {
+    width: 60%; 
+  }
+
+  /* El texto se hace más estrecho */
+  .video-row .text-block {
+    width: 40%;
+    padding: 0 20px; 
+  }
+
+  /* Cuadrícula para los 3 videos verticales */
+  .video-grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 35px; /* Aumentado para que la sombra de 12px quepa sin encimarse */
+    position: relative; 
+  }
+
+  /* Estilos para los párrafos laterales */
+  .text-block p {
+    font-size: 13px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
+
+  /* Espaciado grande entre categorías */
+  .category-spacing { margin-top: 90px; }
+
+  /* Obliga a las secciones a usar el 95% de la pantalla */
+  section {
+    max-width: 95% !important;
+  }
+
+  /* Estira la cuadrícula de los videos para la sección de Moda */
+  section .video-grid-3.moda-grid {
+    max-width: 1100px !important;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  /* ========================================================
+     NUEVO HACK: Caja contenedora para recortar el borde de Drive
+     ======================================================== */
+  .drive-wrapper {
+    width: 100%;
+    max-width: 340px;
+    aspect-ratio: 9/16;
+    border-radius: 8px;
+    box-shadow: -12px 12px 0px 0px #000;
+    margin: 0 auto;
+    overflow: hidden; /* Corta el borde negro sobrante */
+    position: relative;
+    background: #000; /* Evita destellos blancos al cargar */
+  }
+  
+  .drive-wrapper iframe {
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    width: calc(100% + 8px);
+    height: calc(100% + 8px);
+    border: none;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="nav-inner">
+    <nav class="nav-left">
+      <a href="Hola.html">Hola</a>
+      <a href="Index.html">General</a>
+      <a href="Videografia.html" class="active">Videografía</a>
+      <a href="Fotografia.html">Fotografía</a>
+      <a href="Cv.html">CV</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top" style="padding-top: 40px; padding-bottom: 100px; padding-left: 32px; padding-right: 32px;">
+
+  <!-- Título de Página -->
+  <h1 class="page-title">Videografía</h1>
+
+  <!-- ============ REELS CULINARIOS ============ -->
+  <section class="reveal">
+    <div class="center-text">
+      Proyectos enfocados en contenido gastronómico, donde la edición, el ritmo, la esencia y presentación de cada platillo. Cada pieza busca transmitir una experiencia visual atractiva a través del detalle y el color.
+    </div>
+    
+    <div class="video-row">
+      <div class="video-grid-3">
+        <div class="drive-wrapper">
+          <iframe src="https://drive.google.com/file/d/1i73zSbX_OVJjhn8LPwHqP2Fva2cEqKGe/preview" allow="autoplay; fullscreen"></iframe>
+        </div>
+        <div class="drive-wrapper">
+          <iframe src="https://drive.google.com/file/d/1Af5PimpDDT0tAbFN-7O92QLoTVsWvvz8/preview" allow="autoplay; fullscreen"></iframe>
+        </div>
+        <div class="drive-wrapper">
+          <iframe src="https://drive.google.com/file/d/1z7EMHxxtmgKHsytDb_S6DKbnMTUkiFP1/preview" allow="autoplay; fullscreen"></iframe>
+        </div>
+      </div>
+      <div class="text-block">
+        <p>Estos proyectos fueron desarrollados en distintos spots gastronómicos, adaptando la grabación a las condiciones de cada espacio para resaltar la esencia de cada platillo/s.</p>
+        <p>La captura se enfocó en detalles, texturas y movimientos, buscando generar una experiencia visual que transmitiera frescura y atractivo.</p>
+        <p>A lo largo del proceso, el objetivo fue construir una narrativa visual que no solo mostrara la comida, sino que también comunicara sensaciones a través de la imagen.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ VIDEOS DE MEDICINA ============ -->
+  <section class="reveal category-spacing">
+    <div class="center-text">
+      Contenido médico diseñado para mostrar a los especialistas y su trabajo, combinando narrativa, ritmo y momentos clave en quirófano para transmitir confianza y profesionalismo.
+    </div>
+    
+    <div class="video-row">
+      <div class="text-block">
+        <p>Estos proyectos fueron desarrollados en entorno clínico y quirúrgico, documentando de cerca el trabajo de distintos especialistas en su práctica diaria.</p>
+        <p>A lo largo del proceso, el objetivo fue capturar momentos clave que permitieran mostrar no solo la técnica, sino también la esencia del trabajo de cada médico, destacando su especialidad de forma clara, profesional y accesible.</p>
+      </div>
+      <div class="video-grid-3">
+        <div class="drive-wrapper">
+          <iframe src="https://drive.google.com/file/d/1Ce1HZ9zU999TUpRYqD4_IrT0RNfbquk3/preview" allow="autoplay; fullscreen"></iframe>
+        </div>
+        <div class="drive-wrapper">
+          <iframe src="https://drive.google.com/file/d/16yHwP2FpGSfNCdloFzwcykMyvKgyaaGY/preview" allow="autoplay; fullscreen"></iframe>
+        </div>
+        <div class="drive-wrapper">
+          <iframe src="https://drive.google.com/file/d/1R_2oi99VuXa5mqKtfGH2nl2ldX5Epeya/preview" allow="autoplay; fullscreen"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ VIDEOS DE AUTOMOTRIZ ============ -->
+  <section class="reveal category-spacing">
+    <div class="center-text">
+      Proyectos enfocados en contenido automotriz, donde la edición resalta el movimiento, la estética y la esencia de cada vehículo. Cada pieza busca transmitir dinamismo, detalle y carácter a través de la narrativa visual.
+    </div>
+    
+    <div class="video-row">
+      <div class="video-grid-3">
+        <div class="drive-wrapper">
+          <iframe src="https://drive.google.com/file/d/1C60V9Ja7o50HkEYq9m5t91Rt0FRx_W7u/preview" allow="autoplay; fullscreen"></iframe>
+        </div>
+        <div class="drive-wrapper">
+          <iframe src="https://drive.google.com/file/d/11W7CkJdlaCw3mhTiO9YIMLsrW_T3O8DM/preview" allow="autoplay; fullscreen"></iframe>
+        </div>
+        <div class="drive-wrapper">
+          <iframe src="https://drive.google.com/file/d/1njN8V0Z2cJrWlevplALvo3dHmR_cFdhH/preview" allow="autoplay; fullscreen"></iframe>
+        </div>
+      </div>
+      <div class="text-block">
+        <p>Estos proyectos fueron desarrollados en distintos entornos, adaptando la grabación a las condiciones de cada locación para resaltar la presencia y el carácter de cada vehículo.</p>
+        <p>A lo largo de cada grabación, el objetivo fue construir una narrativa visual que no solo mostrara el automóvil, sino que también reflejara su identidad y esencia a través de la imagen.</p>
+        <p>Cada pieza está pensada para destacar el equilibrio entre estética, ritmo y sensación, generando una experiencia visual atractiva.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ VIDEOS DE SPA ============ -->
+  <section class="reveal category-spacing">
+    <div class="center-text">
+      Contenido médico diseñado para mostrar a los especialistas y su trabajo, combinando narrativa, ritmo y momentos clave en quirófano para transmitir confianza y profesionalismo.
+    </div>
+    
+    <div class="video-row">
+      <div class="text-block">
+        <p>Estos proyectos fueron desarrollados en entornos de spa, cuidando cada detalle para transmitir una sensación de calma, equilibrio y bienestar.</p>
+        <p>La grabación se llevó a cabo adaptándome a la iluminación y atmósfera de cada espacio, buscando resaltar texturas, movimientos suaves y momentos clave del servicio.</p>
+        <p>Cada pieza está pensada para reflejar armonia, estética y tranquilidad, generando una conexión visual con el espectador.</p>
+      </div>
+      <div class="video-grid-3">
+        <div class="drive-wrapper">
+          <iframe src="https://drive.google.com/file/d/1RR5ihZIgBbVmxFXaTgbJfju5_0O-BJFc/preview" allow="autoplay; fullscreen"></iframe>
+        </div>
+        <div class="drive-wrapper">
+          <iframe src="https://drive.google.com/file/d/1StGDNQld2BYx1YDWf-dKKzdh0fUF-KB-/preview" allow="autoplay; fullscreen"></iframe>
+        </div>
+        <div class="drive-wrapper">
+          <iframe src="https://drive.google.com/file/d/10ZYEfYavjZAxXBImqK5hqbEqKEs9kbEY/preview" allow="autoplay; fullscreen"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ VIDEOS DE MODA ============ -->
+  <section class="reveal category-spacing">
+    <div class="video-grid-3 moda-grid" style="grid-template-columns: repeat(2, 1fr); max-width: 750px;">
+      <div class="drive-wrapper">
+        <iframe src="https://drive.google.com/file/d/1i6OzCg4baXR3KaKCGUpUO9BXhv9GAJi-/preview" allow="autoplay; fullscreen"></iframe>
+      </div>
+      <div class="drive-wrapper">
+        <iframe src="https://drive.google.com/file/d/1kOJY9NxKafc0Z3sJ5j5GH7KG3Z9mkle8/preview" allow="autoplay; fullscreen"></iframe>
+      </div>
+    </div>
+    
+    <div class="text-block" style="max-width: 850px; margin: 40px auto 0 auto; width: 100%; text-align: center;">
+      <p>Estos proyectos fueron desarrollados en distintos contextos dentro del ámbito de la moda, adaptando la grabación a cada locación para resaltar la estética y personalidad de cada propuesta.</p>
+      <p>A lo largo del proceso, el objetivo fue construir una narrativa visual que no solo mostrara las prendas, sino que también comunicara una identidad y estilo definidos.</p>
+    </div>
+  </section>
+
+</main>
+
+<script src="/script/Script.js"></script>
+
+</body>
+</html>
